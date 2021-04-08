@@ -23,22 +23,22 @@ logging.basicConfig(
 )
 
 COMMON_COMMANDS = {
-    'help': 'справка по всем командам бота',
-    'groups': 'показать список групп',
-    'members': 'показать список пользователей в группе',
-    'call': 'позвать пользователей',
-    'xcall': 'позвать пользователей (inline-диалог)'
+    'help': 'Menampilkan Bantuan Buat orang yang kurang mampu :v',
+    'groups': 'Menampilkan List/Daftar Grup',
+    'members': 'Menampilkan Anggota yang ada di grup bokep ini',
+    'call': 'Panggil Pengguna / mention',
+    'xcall': 'Panggil Anggota (inline-Sebaris)'
 }
 
 ADMIN_COMMANDS = {
-    'add_group': 'добавление группы',
-    'remove_group': 'удаление группы',
-    'add_alias': 'добавление алиаса группы',
-    'remove_alias': 'удаление алиаса группы',
-    'add_members': 'добавление пользователей в группу',
-    'remove_members': 'удаление пользователей из группы',
-    'enable_anarchy': 'всем доступны настройки',
-    'disable_anarchy': 'только админам доступны настройки',
+    'add_group': 'Tambahkan Kedalam Grup',
+    'remove_group': 'Hapus Grup',
+    'add_alias': 'Tambahkan alias grup (@pengguna)',
+    'remove_alias': 'Hapus alias grup (@penggunanyaanjir)',
+    'add_members': 'Tambahkan member (jadi nanti yang di tag ya member yang ditambahin itu) paham gak?',
+    'remove_members': 'Hapus member biadab',
+    'enable_anarchy': 'pengaturan tersedia untuk semua',
+    'disable_anarchy': 'pengaturan tersedia untuk Admin sangean saja',
 }
 
 bot = Bot(token=settings.BOT_TOKEN)
@@ -58,7 +58,7 @@ async def handler_help(message: types.Message):
 
     await message.reply(
         text=md.text(
-            f"Привет, {message.from_user.get_mention()}! 👋",
+            f"Hallo bang, {message.from_user.get_mention()}sat,Terimaksih Telah menggunakan Bot ini hehe",
             "",
             md_style.bold("Пример работы с ботом:"),
             md_style.code("/add_group group1"),
